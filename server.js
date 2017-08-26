@@ -14,9 +14,9 @@ app.get('/article-one', function (req,res) {
 });
 
 var articleone = {
-    title: "Article ONE",
-    head: "Article ONE ONE",
-    date: "25 Aug 2017",
+    title: 'Article ONE',
+    head: 'Article ONE ONE',
+    date: '25 Aug 2017',
     content: `
         <p>
         This is Para 1 of Article ONE
