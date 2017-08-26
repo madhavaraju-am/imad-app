@@ -14,11 +14,11 @@ app.get('/article-one', function (req,res) {
 });
 
 var articles = {
-    `article-one: {
+    articleOne: {
     title: 'Article ONE',
     head: 'Article ONE ONE',
     date: '25 Aug 2017',
-    content: 
+    content: `
         <p>
         This is Para 1 of Article ONE
         </p>
@@ -27,14 +27,13 @@ var articles = {
         </p>
         <p>
         This is Para 3 of Article ONE
-        </p>
-        `
+        </p> `
 },
-   `article-two: {    
+   articleTwo: {    
     title: 'Article TWO',
     head: 'Article TWO TWO',
     date: '15 Sep 2017',
-    content: 
+    content: `
         <p>
         This is Para 1 of Article TWO
         </p>
@@ -46,11 +45,11 @@ var articles = {
         </p>
        `
    },
-    `article-three: {
-            title: 'Article THREE',
+    articleThree: {
+    title: 'Article THREE',
     head: 'Article THREE THREE THREE',
     date: '25 Sep 2017',
-    content: 
+    content: `
         <p>
         This is Para 1 of Article THREE
         </p>
