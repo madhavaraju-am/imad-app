@@ -29,11 +29,58 @@ var articleone = {
         </p>`
 };
 
-var htmlTemplate = `
+function htmlTemplate(data) {
+var title = data.title;
+var head = data.head;
+var content = data.content;
+var date = data.date;
+var htmlTemplate= `
+<html>
+<head>
+    <title>
+        ${title}
+    </title>
+    <meta name="viewport" width="device-width, initial-scale=1"/>
+    link href="/ui/style.css rel="stylesheet" />
+    <style>
+          .container{
+              max-width: 800px;
+              margin: 0 auto;
+              color: green;
+              font-family: sans-serif;
+              padding-top: 30px;
+              padding-left: 10px;
+              padding-right: 10px;
+              
+        }
+    </style>
+  </head>
 
 
-`
-;
+  <body>
+     <div class="container">
+        <a href="/">HOME</a>
+        
+        <h2>
+          Article ONE ONE ONE
+        </h2>
+            <div> 26 August 2017 </div>
+        <p>
+        This is Para 1 of Article ONE
+        </p>
+        <p>
+        This is Para 2 of Article ONE
+        </p>
+        <p>
+        This is Para 3 of Article ONE
+        </p>
+      </div>
+    </body>
+
+</html>
+
+`;
+}
 app.get('/ui/article-one.html', function (req,res) {
    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
