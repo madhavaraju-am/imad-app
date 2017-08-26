@@ -62,7 +62,7 @@ var articles = {
     }
 };
 
-function htmlTemplate(data) {
+function createTemplate(data) {
 var title = data.title;
 var head = data.head;
 var content = data.content;
