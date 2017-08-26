@@ -13,7 +13,8 @@ app.get('/article-one', function (req,res) {
     res.send('Article ONE is requested and served from here');
 });
 
-var articleone = {
+var articles = {
+    articleone: {
     title: 'Article ONE',
     head: 'Article ONE ONE',
     date: '25 Aug 2017',
@@ -27,6 +28,36 @@ var articleone = {
         <p>
         This is Para 3 of Article ONE
         </p>`
+},
+    articletwo: {    
+    title: 'Article TWO',
+    head: 'Article TWO TWO',
+    date: '15 Sep 2017',
+    content: `
+        <p>
+        This is Para 1 of Article TWO
+        </p>
+        <p>
+        This is Para 2 of Article TWO
+        </p>
+        <p>
+        This is Para 3 of Article TWO
+        </p>`},
+    articlethree: {
+            title: 'Article THREE',
+    head: 'Article THREE THREE THREE',
+    date: '25 Sep 2017',
+    content: `
+        <p>
+        This is Para 1 of Article THREE
+        </p>
+        <p>
+        This is Para 2 of Article THREE
+        </p>
+        <p>
+        This is Para 3 of Article THREE
+        </p>`
+    }
 };
 
 function htmlTemplate(data) {
