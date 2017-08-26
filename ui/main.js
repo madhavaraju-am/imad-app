@@ -4,6 +4,6 @@ element.innerHTML = "New VALUE !!!!!" ;
 
 //move the image
 var image = document.getElementById('monster');
-image.onClick = function() {
+image.onclick = function() {
     image.style.marginLeft = '100px';
 };
