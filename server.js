@@ -41,19 +41,7 @@ var htmlTemplate= `
         ${title}
     </title>
     <meta name="viewport" width="device-width, initial-scale=1"/>
-    link href="/ui/style.css rel="stylesheet" />
-    <style>
-          .container{
-              max-width: 800px;
-              margin: 0 auto;
-              color: green;
-              font-family: sans-serif;
-              padding-top: 30px;
-              padding-left: 10px;
-              padding-right: 10px;
-              
-        }
-    </style>
+    <link href="/ui/style.css" rel="stylesheet" />
   </head>
 
 
