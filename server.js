@@ -17,7 +17,16 @@ var articleone = {
     title: "Article ONE",
     head: "Article ONE ONE",
     date: "25 Aug 2017",
-    content: "content"
+    content: `
+        <p>
+        This is Para 1 of Article ONE
+        </p>
+        <p>
+        This is Para 2 of Article ONE
+        </p>
+        <p>
+        This is Para 3 of Article ONE
+        </p>`
 }
 app.get('/ui/article-one.html', function (req,res) {
    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
