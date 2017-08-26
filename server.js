@@ -44,24 +44,15 @@ var htmlTemplate= `
     <link href="/ui/style.css" rel="stylesheet" />
   </head>
 
-
   <body>
      <div class="container">
         <a href="/">HOME</a>
         
         <h2>
-          Article ONE ONE ONE
+          ${head}
         </h2>
-            <div> 26 August 2017 </div>
-        <p>
-        This is Para 1 of Article ONE
-        </p>
-        <p>
-        This is Para 2 of Article ONE
-        </p>
-        <p>
-        This is Para 3 of Article ONE
-        </p>
+            <div> ${date} </div>
+            ${content}
       </div>
     </body>
 
