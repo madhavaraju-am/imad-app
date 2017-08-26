@@ -13,6 +13,12 @@ app.get('/article-one', function (req,res) {
     res.send('Article ONE is requested and served from here');
 });
 
+var articleone = {
+    title: "Article ONE",
+    head: "Article ONE ONE",
+    date: "25 Aug 2017",
+    content: "content"
+}
 app.get('/ui/article-one.html', function (req,res) {
    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
