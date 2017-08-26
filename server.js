@@ -92,6 +92,7 @@ var htmlTemplate= `
 </html>
 
 `;
+return htmlTemplate;
 }
 app.get('/ui/:articleName', function (req,res) {
    //articleName = article-one
