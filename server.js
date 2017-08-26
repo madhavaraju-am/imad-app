@@ -18,7 +18,7 @@ var articles = {
     title: 'Article ONE',
     head: 'Article ONE ONE',
     date: '25 Aug 2017',
-    content: `
+    content: 
         <p>
         This is Para 1 of Article ONE
         </p>
@@ -27,13 +27,14 @@ var articles = {
         </p>
         <p>
         This is Para 3 of Article ONE
-        </p>`
+        </p>
+        `
 },
-    `article-two: {    
+   `article-two: {    
     title: 'Article TWO',
     head: 'Article TWO TWO',
     date: '15 Sep 2017',
-    content: `
+    content: 
         <p>
         This is Para 1 of Article TWO
         </p>
@@ -42,12 +43,14 @@ var articles = {
         </p>
         <p>
         This is Para 3 of Article TWO
-        </p>`},
+        </p>
+       `
+   },
     `article-three: {
             title: 'Article THREE',
     head: 'Article THREE THREE THREE',
     date: '25 Sep 2017',
-    content: `
+    content: 
         <p>
         This is Para 1 of Article THREE
         </p>
