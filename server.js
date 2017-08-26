@@ -14,7 +14,7 @@ app.get('/article-one', function (req,res) {
 });
 
 var articles = {
-    articleOne: {
+    'article-one': {
     title: 'Article ONE',
     head: 'Article ONE ONE',
     date: '25 Aug 2017',
@@ -29,7 +29,7 @@ var articles = {
         This is Para 3 of Article ONE
         </p> `
 },
-   articleTwo: {    
+    'article-two': {    
     title: 'Article TWO',
     head: 'Article TWO TWO',
     date: '15 Sep 2017',
@@ -45,7 +45,7 @@ var articles = {
         </p>
        `
    },
-    articleThree: {
+    'article-three': {
     title: 'Article THREE',
     head: 'Article THREE THREE THREE',
     date: '25 Sep 2017',
