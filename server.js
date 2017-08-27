@@ -113,7 +113,7 @@ app.get('/testt', function (req, res) {
     //get the data from db and return the results
   pool.query('SELECT * FROM testt', function(err,result) {
       if(err){
-            res.status(500), send(err.toString());
+            res.status(500).send(err.toString());
       }
       else {
         res.send(JSON.stringify(result));
