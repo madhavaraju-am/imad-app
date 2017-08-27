@@ -121,6 +121,22 @@ app.get('/testt', function (req, res) {
   });
 });
 
+app.get('/articles/:articleName', function (req, res) {
+    //get the data from db and return the results
+    pool.query('SELECT * FROM article', function(err,result) {
+          if(err){
+                res.status(500).send(err.toString());
+          }else {
+              if (res.rows.length === 0) {
+                res.status(404).send('Record not found');
+            }
+          else {
+            var articleData= result.rows[0];
+          }
+        }
+    });
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
